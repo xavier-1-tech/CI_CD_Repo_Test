@@ -1,10 +1,10 @@
-resource "aws_elastic_beanstalk_environment" "welxome-env" {
+resource "aws_elastic_beanstalk_environment" "welxome-2-env" {
 
-  name = "welxome-tf-env"
-  application = aws_elastic_beanstalk_application.welxome_app.name
+  name = "welxome-2-tf-env"
+  application = aws_elastic_beanstalk_application.welxome-2_app.name
   solution_stack_name = "64bit Amazon Linux 2 v3.3.9 running PHP 8.0"
   description = "environment for flask app"
-  version_label = aws_elastic_beanstalk_application_version.welxome_app_ver.name
+  version_label = aws_elastic_beanstalk_application_version.welxome-2_app_ver.name
 
   setting {
       namespace = "aws:autoscaling:launchconfiguration"
