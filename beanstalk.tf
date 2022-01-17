@@ -1,6 +1,8 @@
 resource "aws_elastic_beanstalk_application" "eb_app" {
-  name  = "eb-tf-app"
+  name  = "hm-tf-app"
   description = "Hemia-project"
+  
+}
   
 resource "aws_elastic_beanstalk_application_version" "eb_app_ver" {
     bucket = aws_s3_bucket.hemia_bucket.id
