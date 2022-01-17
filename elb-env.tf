@@ -1,6 +1,6 @@
 resource "aws_elastic_beanstalk_environment" "tfenv" {
 
-  name = "eb-tf-env"
+  name = "hm-tf-env"
   application = aws_elastic_beanstalk_application.eb_app.name
   solution_stack_name = "64bit Amazon Linux 2 v3.3.9 running PHP 8.0"
   description = "environment for flask app"
