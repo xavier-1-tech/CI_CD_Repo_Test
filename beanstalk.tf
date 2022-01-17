@@ -1,5 +1,5 @@
 resource "aws_elastic_beanstalk_application" "eb_app" {
-  name  = "hm-tf-app"
+  name  = "eb-tf-app"
   description = "Hemia-project"
   
 }
