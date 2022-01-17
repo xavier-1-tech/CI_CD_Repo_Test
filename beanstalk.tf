@@ -3,7 +3,6 @@ resource "aws_elastic_beanstalk_application" "eb_app" {
   description = "Hemia-project"
   
   appversion_lifecycle {
-    service_role          = aws_iam_role.beanstalk_service.arn
     max_count             = 128
     delete_source_from_s3 = true
   }
