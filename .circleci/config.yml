@@ -1,8 +1,7 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
-version: 2
+version: 2.1
+orbs: 
+  aws-elastic-beanstalk: circleci/aws-elastic-beanstalk@2.0.1
+  php: circleci/php@1.1.0
 jobs:
   deploy:
     docker:
