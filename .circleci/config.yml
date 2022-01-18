@@ -10,7 +10,7 @@ jobs:
           path: .
       - terraform/validate:
           path: .
-      - terraform/plan:
+      - terraform/destroy:
           path: .
       - terraform/plan:
           path: .
